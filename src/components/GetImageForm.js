@@ -68,24 +68,24 @@ class GetImageForm extends Component {
 
     return (
       <div>
-        <h1>NASA Mars Rover Gallery</h1>
+        <h1 className="title">NASA Mars Rover Gallery</h1>
         <form>
 
-          <label htmlFor='rover'>Rover</label>
+          <label htmlFor='rover'>Rover: </label>
           <select onChange={this.handleRover} id='rover' value={this.state.rover}>
             <option value="Curiosity">Curiosity</option>
             <option value="Opportunity">Opportunity</option>
             <option value="Spirit">Spirit</option>
           </select>
 
-          <label>Camera Type</label>
+          <label>Camera Type: </label>
           <select onChange={this.handleCamera} value={this.state.camera}>
             <option value="fhaz">FHAZ (Front Camera)</option>
             <option value="rhaz">RHAZ (Back Camera)</option>
             <option value="navcam">NAVCAM (Navigation Camera)</option>
           </select>
 
-          <label htmlFor="sol">Martial Sol: 0-2000</label>
+          <label htmlFor="sol">Martial Sol (0-2000): </label>
           <input onChange={this.handleSol} type="number" min="0" max="2000" value={this.state.sols} />
 
         </form>
