@@ -1,24 +1,30 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+body {
+  background-color: black;
+  background-image: url('https://www.hdwallpapers.in/walls/nasa_mars_curiosity-wide.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  background-attachment: fixed;
+  background-position: 0% 5%;
   color: white;
 }
 
-.App-intro {
-  font-size: large;
+#root {
+  margin: 2.5% 5%;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+img {
+  width: 350px;
+  height: 350px;
+  margin-bottom: 3%;
+  border: 10px solid white;
+  box-sizing: border-box;
+  box-shadow: 1px 1px grey;
 }
